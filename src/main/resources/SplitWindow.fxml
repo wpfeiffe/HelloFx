@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane fx:id="winSplitWindow" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="SplitWindow" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bpcs.javafx.SplitWindowController">
+  <content>
+    <AnchorPane fx:id="apeMain" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <SplitPane fx:id="pneSplitPane" dividerPositions="0.29797979797979796" layoutX="1.0" layoutY="-2.0" prefHeight="380.0" prefWidth="600.0">
+              <items>
+                <AnchorPane fx:id="apeSplitMain" minHeight="0.0" minWidth="0.0" prefHeight="177.0" prefWidth="139.0">
+                     <children>
+                        <ScrollPane fx:id="pneLeftScrollPane" layoutX="0.0" layoutY="0.0" prefHeight="200.0" prefWidth="200.0">
+                          <content>
+                            <AnchorPane fx:id="apnLeft" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="0.0" />
+                          </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <ScrollPane fx:id="pneRightScrollPane" layoutX="0.0" layoutY="0.0" prefHeight="200.0" prefWidth="200.0">
+                          <content>
+                            <AnchorPane fx:id="apnRight" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                          </content>
+                        </ScrollPane>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
