@@ -6,15 +6,19 @@
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<TitledPane fx:id="paneMain" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Resize Test Window" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bpcs.javafx.ResizeController">
+<TitledPane fx:id="paneMain" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Resize Test Window"
+            xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.bpcs.javafx.ResizeController">
     <content>
         <AnchorPane fx:id="apnMain" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
             <children>
-                <Label layoutX="113.0" layoutY="67.0" text="Enter a value:" />
-                <TextField fx:id="txtValue" layoutX="204.0" layoutY="62.0" />
-                <Button fx:id="btnShow" layoutX="384.0" layoutY="62.0" mnemonicParsing="false" onAction="#onShowClicked" text="Show Value" />
-                <Label layoutX="95.0" layoutY="126.0" prefHeight="17.0" prefWidth="108.0" text="You typed value: " />
-                <Label fx:id="lblValue" layoutX="204.0" layoutY="126.0" text="&lt;empty&gt;" />
+                <Label layoutX="113.0" layoutY="67.0" text="Enter a value:"/>
+                <TextField fx:id="txtValue" layoutX="204.0" layoutY="62.0"/>
+                <Button fx:id="btnShow" layoutX="384.0" layoutY="62.0" mnemonicParsing="false" onAction="#onShowClicked"
+                        text="Show Value"/>
+                <Label layoutX="95.0" layoutY="126.0" prefHeight="17.0" prefWidth="108.0" text="You typed value: "/>
+                <Label fx:id="lblValue" layoutX="204.0" layoutY="126.0" text="&lt;empty&gt;"/>
             </children>
         </AnchorPane>
     </content>
